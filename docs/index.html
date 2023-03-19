@@ -15,43 +15,41 @@
 <body>
     <header>
         <nav>
-            <a href="/"><img alt="Logo" src="https://pac.ertia.io/pac_logo.svg" height="70"></a>
+            <a href="/"><img alt="Logo" src="https://pac.ertia.io/pac_logo.svg" height="100"></a>
             <ul>
-                <li>Menu Item 1</li>
-                <li><a href="#">Menu Item 2</a></li>
-                <li><a href="#">Dropdown Menu Item</a>
-                    <ul>
-                        <li><a href="#">Sublink with a long name</a></li>
-                        <li><a href="#">Short sublink</a></li>
-                    </ul>
-                </li>
+                <li>About</li>
+                <li><a href="#">Projects</a></li>
             </ul>
         </nav>
-        <h1>Platform Agnostic Configurationwith <i>Italics</i> and <u>Underline</u></h1>
-        <p>Page Subheading with <mark>highlighting</mark></p>
-        <br>
-        <p><a href="#"><i>Italic Link Button</i></a><a href="#"><b>Bold Link Button &rarr;</b></a></p>
+        <h1>Platform Agnostic Configuration</h1>
+        <p>How about a <mark>sane</mark> standard?</p>
     </header>
     <main>
         <hr>
         <section>
             <header>
-                <h2>Section Heading</h2>
-                <p>Section Subheading</p>
+                <h2>PAC Example</h2>
+                <p>Postgres Config</p>
             </header>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content*</p>
-                <p><small>*with small content</small></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content <sup>with notification</sup></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content</p>
-            </aside>
+            <code>
+pac.ertia.io:
+
+#PORTS
+  pac.ertia.io/ports#http: 8000
+  pac.ertia.io/ports#https: 8443
+
+
+#POSTGRES
+  pac.ertia.io/postgresql#enabled:
+  pac.ertia.io/postgresql#secret:
+  pac.ertia.io/postgresql#uri:
+
+#  Also possible
+#  pac.ertia.io/postgres:
+#    secret: postgres-secret
+#    url: postgres://
+    
+            </code>
         </section>
         <hr>
         <section>
