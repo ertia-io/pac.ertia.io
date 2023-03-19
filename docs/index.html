@@ -26,6 +26,45 @@
     </header>
     <main>
         <hr>
+        
+        <section>
+            <header>
+                <h2>Tired of this?</h2>
+                <p>Each component is a little different</p>
+               
+            </header>
+            <aside>
+                <pre>
+                <code>
+                component1:
+                    postgres:
+                      existingSecret: postgres-user-secret
+                </code>
+                </pre>
+            </aside>
+            <aside>
+                <pre>
+                <code>
+                component2:
+                  database:
+                    postgresql:
+                      username: postgres
+                      password: -
+                      database: component1
+                </code>
+                </pre>
+            </aside>
+            <aside>
+                <pre>
+                <code>
+                component3:
+                  database:
+                    type: postgres
+                    uri: postgresql://...
+                </code>
+                </pre>
+            </aside>
+        </section>
         <section>
             <header>
                 <h2>PAC Example</h2>
