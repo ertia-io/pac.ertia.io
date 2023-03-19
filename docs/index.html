@@ -7,6 +7,20 @@
   <body>
     <h1>PAC: Platform Agnostic Configuration</h1>
     <p>Isn't it about time we standarize configuration?</p>
+    
+    <code>
+      #POSTGRES
+        pac.ertia.io/postgresql#enabled:
+        pac.ertia.io/postgresql#secret:
+        pac.ertia.io/postgresql#uri:
+
+      #  Also possible
+      #  pac.ertia.io/postgres:
+      #    secret: postgres-secret
+      #    url: postgres://
+    
+
+    </code>
   
   <body>
   
